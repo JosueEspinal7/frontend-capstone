@@ -45,7 +45,13 @@ const BookingForm = ({ availableTimes, dispatch, onSubmit }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}
+      style={{
+        display: 'grid',
+        maxWidth: '200px',
+        gap: '20px',
+        margin: '0 auto',
+        color: 'white',
+      }}
     >
       <label htmlFor='res-date'>Choose date</label>
       <input
@@ -82,6 +88,7 @@ const BookingForm = ({ availableTimes, dispatch, onSubmit }) => {
         disabled={isButtonDisabled}
         type='submit'
         value='Make Your reservation'
+        style={{ backgroundColor: 'white', color: 'black' }}
       />
     </form>
   );

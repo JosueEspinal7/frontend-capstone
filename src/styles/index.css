@@ -3,10 +3,10 @@
   --yellow: #f4ce14;
   --dark-salmon: #ee9972;
   --light-salmon: #fbdabb;
-  --light-gray: #edefee;
+  --light-gray: #fafafa;
   --dark-gray: #333333;
-  --white: #ffffff;
-  --black: #000000;
+  --white: #1a1a1a;
+  --black: #1a1a1a;
 }
 
 html {
@@ -49,7 +49,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: '120px';
   height: auto;
 }
 
@@ -61,6 +61,7 @@ code {
 body {
   display: flex;
   flex-direction: column;
+  background-color: #1a1a1a;
 }
 
 .header {
@@ -84,7 +85,7 @@ body {
   display: flex;
   padding: 4rem 0 0 4rem;
   background-color: var(--dark-gray);
-  color: var(--white);
+  color: var(--light-gray);
   width: 75vw;
   height: 100vh;
   transition: 750ms;
@@ -120,10 +121,12 @@ main {
 .hero-section__wrapper {
   height: 21.6875rem;
   background-color: var(--green);
+  margin-bottom: 12px;
 }
 
 .hero-section {
   height: 100%;
+  margin-bottom: 14px;
 }
 
 .hero-section__title {
@@ -143,8 +146,8 @@ main {
 .hero-section__paragraph {
   line-height: 1.2;
   margin-top: 1rem;
-  margin-bottom: 3rem;
-  width: 50vw;
+  margin-bottom: 1rem;
+  width: 100vw;
   color: var(--light-gray);
 }
 
@@ -154,12 +157,13 @@ main {
   margin-top: auto;
   margin-bottom: auto;
   right: 1rem;
-  position: absolute;
+  position: relative;
   width: 8.5rem;
-  height: 8.5rem;
-  border-radius: 1rem;
+  height: 20rem;
+  border-radius: 0rem;
   object-fit: cover;
   object-position: center;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px) {
@@ -173,7 +177,7 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 19rem;
+    height: 36rem;
   }
 
   .hero-section__title {
@@ -187,12 +191,14 @@ main {
   }
 
   .hero-section__img {
-    top: 7rem;
+    top: 0;
     margin-top: auto;
+    margin-bottom: 12px;
     right: 0;
     position: absolute;
-    width: 22rem;
-    height: 22rem;
+    width: 36rem;
+    height: 40rem;
+    overflow: hidden;
   }
 
   .container {
@@ -213,6 +219,7 @@ main {
     flex-direction: row;
     font-weight: 700;
     gap: 1.5rem;
+    color: var(--light-gray)
   }
 
   .hamburger-menu {

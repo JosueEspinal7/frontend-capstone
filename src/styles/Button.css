@@ -6,7 +6,7 @@
   background-color: var(--yellow);
   padding: 0.5rem 1.2rem 0.5rem 1.2rem;
   border-radius: 1rem;
-  color: var(--black);
+  color: var(--light-gray);
   font-size: 1rem;
   font-weight: 700;
   transition: 200ms ease-in-out;
